@@ -12,6 +12,7 @@ class CalculatorTest {
         Calculator calculator = new Calculator();
 
         //when
+        //then
         assertThrows(ArithmeticException.class,
                 () -> calculator.divide(10,0)
         );
