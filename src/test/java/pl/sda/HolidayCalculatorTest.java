@@ -30,6 +30,8 @@ class HolidayCalculatorTest {
 
         //then
         Assertions.assertEquals(checkResult, true);
+        Mockito.verify(calculator).add(today, 3);
+        Mockito.verifyNoMoreInteractions(calculator);
     }
 
 }
