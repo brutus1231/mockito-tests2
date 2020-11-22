@@ -1,13 +1,13 @@
 package pl.sda;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 class PersonValidatorTest {
 
-    @Test
+    @ParameterizedTest
+    @CsvSource("{}")
     void validate() {
         //given
         Person person = Person.builder()
