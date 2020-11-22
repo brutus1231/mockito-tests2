@@ -13,6 +13,6 @@ public class HolidayCalculator {
     public boolean check(Date date) {
 
         Date daysAdd = calculator.add(date, 3);
-        return false;
+        return daysAdd.getDay() == 0;
     }
 }
