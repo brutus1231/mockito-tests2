@@ -11,6 +11,9 @@ public class PersonValidator {
     public boolean validate(Person person) {
         initValidator();
 
+        if (person == null) {
+            return false;
+        }
         return validator.validate(person).size() == 0;
     }
 
